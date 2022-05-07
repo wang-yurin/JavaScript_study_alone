@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 자료형</title>
+</head>
+
+<body>
+    <script>
+        // 따옴표를 문자 그대로 사용하려면 \사용하기
+        console.log('This is \"string\"');
+
+        console.log('동해물과 백두산이 마르고 닳도록');
+
+        // \n 줄바꿈
+        console.log('동해물과 백두산이\n 마르고 닳도록');
+
+        // \t 탭
+        console.log('동해물과\t백두산이\t마르고\t닳도록');
+
+        // 문자열 내부에서 역슬래시 하나는 역슬래시로 인식하지 않습니다. 역슬래시를 나타내려면 \\두개를 사용해야합니다.
+        console.log(' \\ ')
+        console.log(' \\ \\\ \\\\ \\\\\ \\\\\\ ');
+
+        console.log(' \ ') //빈 문자열로 출력
+
+        /* console.log('\') //이스케이프 문자로 인식하여 문자열이 닫히지 않았다고 오류 */
+
+        // 문자열 + 문자열
+        console.log('가나다' + '라마' + '바사아' + '자차카' + '타파하')
+
+        // 문자 선택 연산자
+        console.log('안녕하세요'[0])
+        console.log('안녕하세요'[1])
+        console.log('안녕하세요'[2])
+
+        // 문자열 길이
+        console.log('자바스크립트'.length)
+        console.log('공백도 문자열입니다'.length)
+    </script>
+</body>
+
+</html>
