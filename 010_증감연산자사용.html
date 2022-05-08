@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>증감 연산자 사용</title>
+</head>
+
+<body>
+    <script>
+        // 후위 postfix
+        /* 
+        let number = 10
+
+        alert(number++)
+        alert(number++)
+        alert(number++)
+        */
+
+        //위의 내용을 풀어 쓴 것
+        /*
+        let number = 10
+
+        alert(number); number += 1
+        alert(number); number += 1
+        alert(number); number += 1
+        */
+
+
+        //전위 prefix
+        /*
+        let number = 10
+
+        alert(++number)
+        alert(++number)
+        alert(++number)
+        */
+
+        /*
+        let number = 10
+
+        alert(number++) //실행 10, 값 11
+        alert(++number) //11에 1더하고 12 실행, 값 12
+        alert(number--) //실행 12, 값 11
+        alert(--number) //11에 1빼고 10 실행, 값 10
+        */
+
+
+        let number = 10
+
+        alert(number) //실행 10
+        number++ //실행 10, 값 11 //alert 사용하지 않아 경고창 안뜸
+        number++ //실행 11, 값 12 //alert 사용하지 않아 경고창 안뜸
+        alert(number) // 실행 12
+        alert(number) //실행 12
+        number-- // 실행 12 값 11 //alert 사용하지 않아 경고창 안뜸
+        number-- // 실행 11 값 10//alert 사용하지 않아 경고창 안뜸
+        alert(number) //실행 10
+    </script>
+</body>
+
+</html>

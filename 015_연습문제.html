@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P126</title>
+</head>
+
+<body>
+    <script>
+        /*
+        const num = prompt('변환하고 싶은 cm 단위를 입력하세요')
+
+        const cm = Number(num)
+        const inch = cm * 0.393701
+
+        alert(`입력하신 ${cm}cm는 변환하면 ${inch}inch 입니다.`)
+        */
+
+
+        /*
+        const radiusInput = prompt('반지름을 입력하세요')
+
+        const r = Number(radiusInput)
+
+        document.write(`반지름 : ${r}<br>`)
+        document.write(`원의 넓이 : ${3.14 * r * r}<br>`)
+        document.write(`원의 둘레 : ${2 * 3.14 * r}<br>`)
+        */
+
+        /*
+        const dollarInput = prompt('달러를 입력하세요.')
+
+        const dollar = Number(dollarInput)
+
+        document.write(`달러 : ${dollar}<br>`)
+        document.write(`원화 : ${dollar * 1207}`)
+        */
+
+
+        const breakfastCal = prompt('아침의 칼로리를 입력하세요')
+        const lunchCal = prompt('점심의 칼로리를 입력하세요')
+        const dinnerCal = prompt('저녁의 칼로리를 입력하세요')
+
+        const breakfast = Number(breakfastCal)
+        const lunch = Number(lunchCal)
+        const dinner = Number(dinnerCal)
+
+        let output = ''
+        output += `아침 칼로리 : ${breakfast}Kcal\n`
+        output += `점심 칼로리 : ${lunch}Kcal\n`
+        output += `저녁 칼로리 : ${dinner}Kcal\n`
+        output += `오늘 총 섭취 칼로리 : ${breakfast + lunch + dinner}Kcal\n`
+        alert(output)
+    </script>
+</body>
+
+</html>

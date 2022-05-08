@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복합 대입 연산자 활용</title>
+</head>
+
+<body>
+    <script>
+        // 복합 대입 연산자 사용
+        let list = ''
+
+        list += '<ul>'
+        list += '<li>Hello world</li>'
+        list += '<li>Hello JavaScript</li>'
+        list += '</ul>'
+
+        document.write(list)
+
+        // 복합 대입 연산자 사용 X 
+        document.write('<ul><li>Hello world</li><li>JavaScript</li></ul>')
+
+        // 복합 대입 연산자 사용 X
+        const list2 = ('<ul><li>Hello world</li><li>JavaScript</li></ul>')
+        document.write(list2)
+    </script>
+</body>
+
+</html>
