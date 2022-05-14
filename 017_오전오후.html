@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if 조건문으로 오전 오후 구하기</title>
+</head>
+
+<body>
+  <script>
+    const date = new Date();
+    const hour = date.getHours();
+    /*
+    // if 조건문
+    if (hour < 12) {
+      alert('오전입니다.');
+    }
+
+    if (hour >= 12) {
+      alert('오후입니다.');
+    }
+
+    alert(hour)
+    */
+
+    /*
+    // if else 조건문
+    if (hour < 12) {
+      console.log('오전입니다.');
+    } else {
+      console.log('오후입니다.');
+    }
+    */
+
+    /*
+    // if 중첩문으로 
+    //12시 이전이면 오전입니다.
+    //11시 이전이면 아침 드셨나요?
+    //12시 이후면 오후입니다.
+    //12~15시 이전이면 점심 드셨나요?
+    //16시 이후면 저녁 드셨나요?
+    if (hour < 12) {
+      console.log('오전입니다.');
+      if (hour < 11 ) {
+        console.log('아침 드셨나요?');
+      }
+    } else {
+      console.log('오후입니다.');
+      if (hour < 15) {
+        console.log('점심 드셨나요?');
+      } else {
+        console.log('저녁 드셨나요?');
+      }
+    }
+    */
+
+
+    //if else if 조건문
+    // 11시 이전 아침 드셨나요?
+    // 12~15시 점심 드셨나요?
+    // 16시 이후 저녁 드셨나요?
+    if (hour < 11) {
+      console.log('아침 드셨나요?');
+    } else if (hour <= 15) {
+      console.log('점심 드셨나요?');
+    } else {
+      console.log('저녁 드셨나요?');
+    }
+  </script>
+</body>
+
+</html>
