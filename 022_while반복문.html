@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    let i = 0;
+    // while (confirm('계속 진행하시겠습니까?')) {
+    //   alert(`${i}번째 반복입니다.`);
+    //   i = i + 1;
+    // }
+
+    const array = [1, 2, 3, 4, 5];
+    while (i < array.length) {
+      console.log(`${i} : ${array[i]}`);
+      i++;
+    }
+
+    /*
+    for (let i = 0; true; i++) {
+      alert(i + '번째 반복문입니다.');
+
+      const isContinue = confirm('계속 하시겠습니까?');
+      if (!isContinue) {
+        break;
+      }
+    }
+
+    alert('프로그램 종료');
+    */
+
+    /*
+    for (let i = 0; i < 5; i++) {
+      continue
+      alert(i)
+    }
+    */
+
+    /*
+    // 0~10까지 짝수의 합
+    let output = 0
+
+    for (let i = 1; i <= 10; i++) {
+      if (i % 2 == 1) {
+        continue
+      }
+      output += i
+    }
+
+    alert(output)
+    */
+
+    //중첩 반복문을 사용해서 피라미드 만들기
+    let output = ''
+
+    for (let i = 1; i < 10; i++) {
+      for (let j = 0; i > j; j++) {
+        output += '*'
+      }
+      output += '\n'
+    }
+    console.log(output)
+
+    for (let i = 0; i < 10; i++) {
+      for (let j = 10; i < j; j--) {
+        output += ' '
+      }
+      for (let k = 0; k < 2 * i - 1; k++) {
+        output += '*'
+      }
+      output += '\n'
+    }
+    console.log(output)
+  </script>
+</body>
+
+</html>
